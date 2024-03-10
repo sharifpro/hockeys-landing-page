@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="font-manrope scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+
+<body>
+
+    <!--! header  -->
+    <header class="px-1 md:px-15 lg:px-20 flex justify-center items-center flex-col">
+        <!-- Navbar -->
+        <nav class="navbar py-6 static">
+
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button"
+                        class="btn bg-transparent border-none shadow-none hover:bg-transparent  lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+
+                    <ul tabindex="0"
+                        class="text-base bg-[#fff] text-[#424247] menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                        <li><a
+                                class="bg-[#ffff] border-none shadow-none hover:text-[#ffff] hover:bg-btnColor hover:font-semibold hover:duration-200">Home</a>
+                        </li>
+                        <li><a
+                                class="bg-[#ffff] border-none shadow-none hover:text-[#ffff] hover:bg-btnColor hover:font-semibold hover:duration-200">About</a>
+                        </li>
+                        <li><a
+                                class="bg-[#ffff] border-none shadow-none hover:text-[#ffff] hover:bg-btnColor hover:font-semibold hover:duration-200">Pages</a>
+                        </li>
+                        <li><a
+                                class="bg-[#ffff] border-none shadow-none hover:text-[#ffff] hover:bg-btnColor hover:font-semibold hover:duration-200">Blog</a>
+                        </li>
+                        <li><a
+                                class="bg-[#ffff] border-none shadow-none hover:text-[#ffff] hover:bg-btnColor hover:font-semibold hover:duration-200">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="text-2xl md:text-3xl lg:text-4xl font-black">Hockey<span class="text-btnColor">’</span>s</a>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="text-base text-[#424247] bg-transparent menu menu-horizontal px-1">
+                    <li><a
+                            class="bg-transparent border-none shadow-none hover:bg-transparent text-btnColor font-semibold">Home</a>
+                    </li>
+                    <li><a
+                            class="bg-transparent border-none shadow-none hover:bg-transparent hover:text-btnColor hover:font-semibold hover:duration-200">About</a>
+                    </li>
+                    <li><a
+                            class="bg-transparent border-none shadow-none hover:bg-transparent hover:text-btnColor hover:font-semibold hover:duration-200">Pages</a>
+                    </li>
+                    <li><a
+                            class="bg-transparent border-none shadow-none hover:bg-transparent hover:text-btnColor hover:font-semibold hover:duration-200">Blog</a>
+                    </li>
+                    <li><a
+                            class="bg-transparent border-none shadow-none hover:bg-transparent hover:text-btnColor hover:font-semibold hover:duration-200">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-end">
+                <i
+                    class="fa-solid fa-magnifying-glass text-xl text-[#89898B] md:px-4 lg:px-4 hidden md:block lg:block"></i>
+                <a
+                    class="text-lg text-[#ffff] font-bold border-2 rounded-xl duration-150 bg-btnColor hover:bg-transparent hover:border-2 hover:border-btnColor hover:text-btnColor hover:shadow-btnColor hover:shadow-md hover:cursor-pointer px-3 py-2 md:px-5 md:py-3 md:text-xl lg:text-lg">Get
+                    Ticket</a>
+            </div>
+        </nav>
+        <!-- Navbar End-->
+
+        <!-- Banner Section -->
+        <!-- Slider -->
+        <div class="hero max-h-fit px-1">
+            <div class="carousel w-full overflow-y-hidden">
+                <div id="slide1" class="carousel-item relative w-full  max-h-[550px] ">
+                    <img src="./img/hero_img_1.svg" class="w-full object-cover rounded-badge non" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1/3 md:left-80 lg:left-5 right-full md:right-full lg:right-full top-full md:top-full lg:top-full ">
+                        <a href="#slide3"
+                            class="btn bg-[#131318] text-[#ffff] btn-circle mb-24 md:mb-24  hover:bg-[#131313]">❮</a>
+                        <a href="#slide2"
+                            class="btn bg-[#131318] text-[#ffff] btn-circle ml-4 md:ml-4 lg:ml-4 mb-24 md:mb-24 lg:mb-24 hover:bg-[#131313]">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide2" class="carousel-item relative w-full max-h-[550px] ">
+                    <img src="./img/hero_img_2.jpg" class="w-full object-cover rounded-badge" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1/3 md:left-96  lg:left-5 right-full md:right-full lg:right-full top-full md:top-full lg:top-full ">
+                        <a href="#slide1"
+                            class="btn bg-[#131318] text-[#ffff] btn-circle mb-24 md:mb-24  hover:bg-[#131313]">❮</a>
+                        <a href="#slide3"
+                            class="btn bg-[#131318] text-[#ffff] btn-circle ml-4 md:ml-4 lg:ml-4 mb-24 md:mb-24 lg:mb-24 hover:bg-[#131313]">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide3" class="carousel-item relative w-full max-h-[550px] ">
+                    <img src="./img/hero_img_3.jpg" class="w-full object-cover rounded-badge" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1/3 md:left-96  lg:left-5 right-full md:right-full lg:right-full top-full md:top-full lg:top-full ">
+                        <a href="#slide2"
+                            class="btn bg-[#131318] text-[#ffff] btn-circle mb-24 md:mb-24  hover:bg-[#131313]">❮</a>
+                        <a href="#slide1"
+                            class="btn bg-[#131318] text-[#ffff] btn-circle ml-4 md:ml-4 lg:ml-4 mb-24 md:mb-24 lg:mb-24 hover:bg-[#131313]">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Slider -->
+        
+        <!-- Banner Card -->
+        <div class="mt-3 md:mt-0 lg:mt-0  mx-2 md:mx-0 lg:mx-0 lg:absolute lg:right-28 lg:bottom-0 rounded-xl lg:p-0  w-fit lg:inline-block bg-[#131318] shadow-xl z-10">
+            <div class="p-4 md:p-6 lg:p-6 rounded-xl">
+                <h2 class="card-title text-lg md:text-2xl lg:text-2xl text-[#ffff]">Meet all the heroes from the field</h2>
+                <p class="text-sm md:text-base lg:text-base text-[#ffffff99]">Discover brave athletes, skilled players, and
+                    inspiring coaches. <br> Join us to celebrate sportsmanship and excellence together!</p>
+            </div>
+        </div>
+        <!-- Banner Card -->
+
+        <!-- Banner Section End -->
+
+    </header>
+    <!--? header end -->
+
+    <!--! Main -->
+    <main class="mt-0 md:mt-0 lg:mt-16">
+
+        <!--! Professional  -->
+        <section class=" my-10 px-4 md:px-15 lg:px-20">
+            <div class="py-10 text-center border-y-2 border-borderBgm border-dashed">
+                <h1 class="text-2xl md:text-4xl lg:text-4xl font-black">Professional Hockeys Club</h1>
+                <p class="text-sm md:text-base lg:text-base mt-4 text-para md:px-40 lg:px-80">Experience the thrill on ice with our elite
+                    Professional Hockey Club. Join the excitement and excellence! </p>
+            </div>
+
+            <div class="border-b-2 border-borderBgm border-dashed pt-10 pb-11 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-4 lg:gap-4 ">
+                <div class="p-0 card w-full bg-base-100 flex flex-col items-center">
+                    <div class="radial-progress bg-[#E7E7E8] text-[#FF4240] rotate-[160deg]" style="--value:87; --size:7rem;" role="progressbar">
+                        <span class="text-real text-2xl font-black rotate-[200deg] bg-[#ffff] px-5 py-7 rounded-full">87%</span>
+                    </div>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl">Prayer Facility</h2>
+                        <p class="text-base text-para">Sacred space for peaceful reflection, prayer.</p>
+                    </div>
+                </div>
+
+                <div class="p-0 card w-full bg-base-100 flex flex-col items-center">
+                    <div class="radial-progress text-[#49D293] bg-[#E7E7E8] rotate-[160deg]" style="--value:95; --size:7rem;" role="progressbar">
+                        <span class="text-real text-2xl font-black  rotate-[200deg] bg-[#ffff] px-5 py-7 rounded-full">95%</span></div>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title ">Experienced Coach</h2>
+                        <p class="text-base text-para">Guiding success, shaping skills, inspiring victories.</p>
+                    </div>
+                </div>
+
+                <div class="p-0 card w-full bg-base-100 flex flex-col items-center">
+                    <div class="radial-progress text-[#ffb546] bg-[#E7E7E8] rotate-[160deg]" style="--value:90; --size:7rem;" role="progressbar">
+                        <span class="text-real text-2xl font-black rotate-[200deg] bg-[#ffff] px-5 py-7 rounded-full">90%</span></div>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title ">Senior Player</h2>
+                        <p class="text-base text-para">Experienced, skilled, respected. Senior Player.</p>
+                    </div>
+                </div>
+
+                <div class="p-0 card w-fifullt bg-base-100 flex flex-col items-center">
+                    <div class="radial-progress text-[#4C8DF1] bg-[#E7E7E8] rotate-[160deg]" style="--value:80; --size:7rem;" role="progressbar">
+                        <span class="text-real text-2xl font-black rotate-[200deg] bg-[#ffff] px-5 py-7 rounded-full">80%</span></div>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title ">Training Ground</h2>
+                        <p class="text-base text-para">Transform, excel, conquer: Welcome to Training Ground!</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--? Professional End -->
+
+        <!--! Program  -->
+        <section class="my-10 px-4 md:px-15 lg:px-20">
+            <div class="pb-10 text-center border-b-2 border-borderBgm border-dashed">
+                <h1 class="text-2xl md:text-4xl lg:text-4xl font-black">Program Sections</h1>
+                <p class="text-sm md:text-base lg:text-base mt-4 text-para md:px-40 lg:px-80">Explore diverse program sections, each
+                    designed to cater to specific needs and goals. Discover opportunities for growth. </p>
+            </div>
+
+            <div class="border-b-2 border-borderBgm border-dashed pt-10 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="card w-full shadow-xl image-full ">
+                    <figure><img src="./img/program-1.svg" alt="Shoes" class="object-cover w-full" /></figure>
+                    <div class="card-body flex flex-col items-end justify-end">
+                        <div>
+                            <h2 class="card-title text-xl md:text-2xl align-bottom mb-2">Junior Program</h2>
+                            <p class="text-sm md:text-base align-bottom">Explore the Junior Program! Engage in exciting
+                                activities,
+                                foster creativity, and build lifelong skills. Join us for a journey of learning,
+                                laughter, and growth. Enroll today!</p>
+                            <div class="card-actions justify-start mt-5">
+                                <button
+                                    class="px-5 btn bg-btnColor border-btnColor border-2 text-lg md:text-xl lg:text-xl text-[#ffff] font-bold hover:bg-transparent hover:border-btnColor  hover:shadow-btnColor hover:shadow-md hover:cursor-pointer">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 1 End -->
+
+                <!-- Card 2 -->
+                <div class="card w-full bg-base-100 shadow-xl image-full ">
+                    <figure><img src="./img/program-2.svg" alt="Shoes" class="object-cover w-full" /></figure>
+                    <div class="card-body flex flex-col items-end justify-end">
+                        <div>
+                            <h2 class="card-title text-xl md:text-2xl align-bottom mb-2">Teenager Program</h2>
+                            <p class="text-sm md:text-base align-bottom">Empower teens through our dynamic Teenager
+                                Program. Unleash their potential with engaging workshops, mentorship, and skill-building
+                                activities. </p>
+                            <div class="card-actions justify-start mt-5">
+                                <button
+                                    class="px-5 btn bg-btnColor border-btnColor border-2 text-lg md:text-xl lg:text-xl text-[#ffff] font-bold hover:bg-transparent hover:border-btnColor  hover:shadow-btnColor hover:shadow-md hover:cursor-pointer">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 End -->
+
+                <!-- Card 3 -->
+                <div class="card max-w-fit bg-base-100 shadow-xl image-full col-span-1 md:col-span-2 lg:col-span-2">
+                    <figure><img src="./img/program_3.svg" alt="Shoes" class="object-cover w-full" /></figure>
+                    <div class="card-body  flex flex-col items-end justify-end">
+                        <div class="lg:pr-96">
+                            <h2 class="card-title text-xl md:text-2xl align-bottom mb-2">Professional Program</h2>
+                            <p class="text-sm md:text-base align-bottom">Explore our Professional Program for expert
+                                insights, skill development, and career advancement. Gain valuable knowledge with
+                                industry experts. Elevate your professional journey with our comprehensive learning
+                                experience.</p>
+                            <div class="card-actions justify-start mt-5">
+                                <button
+                                    class="px-5 btn bg-btnColor border-btnColor border-2 text-lg md:text-xl lg:text-xl text-[#ffff] font-bold hover:bg-transparent hover:border-btnColor  hover:shadow-btnColor hover:shadow-md hover:cursor-pointer">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 End -->
+
+            </div>
+        </section>
+        <!--? Program End -->
+
+        <!--! Product -->
+        <section class="my-10 px-4 md:px-15 lg:px-20">
+            <div class="pb-10 text-center border-b-2 border-borderBgm border-dashed">
+                <h1 class="text-2xl md:text-4xl lg:text-4xl font-black">Our New Products</h1>
+                <p class="text-sm md:text-base lg:text-base mt-4 text-para md:px-40 lg:px-80">Explore our latest innovations and additions in the 'Our New Products' section for cutting-edge solutions and advancements</p>
+            </div>
+
+            <div class="border-b-2 border-borderBgm border-dashed pt-10 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                
+                <!--! Card 1 -->
+                <div class="w-full flex items-center justify-between flex-col md:flex-col lg:flex-row card card-side bg-[#ffff] hover:shadow-xl hover:duration-150 hover:cursor-pointer border border-borderBgm  md:px-4 lg:px-4">
+                    <figure class="rounded-none w-full md:w-full lg:w-1/2 p-6 md:p-0 lg:p-0 md:px-3 md:pt-8" ><img src="./img/product_1.svg" alt="Movie" class="h-fit w-full"/></figure>
+                    <div class="card-body">
+                        <div class="flex items-start justify-start mb-2">
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-solid fa-star fa-fade mr-1 text-[#F99808]"></i> 5.0                      
+                            </p>
+                            
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-eye fa-fade mr-1"></i> 20
+                            </p>
+
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-heart fa-fade mr-1"></i> 200
+                            </p>
+                            
+                        </div>
+                        <h2 class="card-title text-xl font-black mb-2">Jacket World Cup Football</h2>
+                        <p class="text-para">Explore World Cup Jacket on our website today.</p>
+                        <div class="flex justify-between flex-col md:flex-col lg:flex-row">
+                            <p class="text-lg font-black text-btnColor">Price - $22.00</p>
+                            <p class="text-imgBg mt-2 md:mt-2 lg:mt-0"><i class="fa-solid fa-cart-shopping fa-shake mr-1"></i>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!--? Card 1 End -->
+                
+                <!--! Card 2 -->
+                <div class="w-full flex items-center justify-between flex-col md:flex-col lg:flex-row card card-side bg-[#ffff] hover:shadow-xl hover:duration-150 hover:cursor-pointer border border-borderBgm  md:px-4 lg:px-4">
+                    <figure class="rounded-none w-full md:w-full lg:w-1/2 p-6 md:p-0 lg:p-0 md:px-3 md:pt-8" ><img src="./img/product_2.svg" alt="Movie" class="h-fit w-full"/></figure>
+                    <div class="card-body">
+                        <div class="flex items-start justify-start mb-2">
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-solid fa-star fa-fade mr-1 text-[#F99808]"></i> 5.0                      
+                            </p>
+                            
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-eye fa-fade mr-1"></i> 20
+                            </p>
+
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-heart fa-fade mr-1"></i> 200
+                            </p>
+                            
+                        </div>
+                        <h2 class="card-title text-xl font-black mb-2">World Cup Flags Football</h2>
+                        <p class="text-para">Explore World Cup Flags Football on our website today.</p>
+                        <div class="flex justify-between flex-col md:flex-col lg:flex-row">
+                            <p class="text-lg font-black text-btnColor">Price - $22.00</p>
+                            <p class="text-imgBg mt-2 md:mt-2 lg:mt-0"><i class="fa-solid fa-cart-shopping fa-shake mr-1"></i>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!--? Card 2 End -->
+                
+                <!--! Card 3 -->
+                <div class="w-full flex items-center justify-between flex-col md:flex-col lg:flex-row card card-side bg-[#ffff] hover:shadow-xl hover:duration-150 hover:cursor-pointer border border-borderBgm  md:px-4 lg:px-4">
+                    <figure class="rounded-none w-full md:w-full lg:w-1/2 p-6 md:p-0 lg:p-0 md:px-3 md:pt-8" ><img src="./img/product_3.svg" alt="Movie" class="h-fit w-full"/></figure>
+                    <div class="card-body">
+                        <div class="flex items-start justify-start mb-2">
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-solid fa-star fa-fade mr-1 text-[#F99808]"></i> 5.0                      
+                            </p>
+                            
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-eye fa-fade mr-1"></i> 20
+                            </p>
+
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-heart fa-fade mr-1"></i> 200
+                            </p>
+                            
+                        </div>
+                        <h2 class="card-title text-xl font-black mb-2">Cap For Hockeys</h2>
+                        <p class="text-para">Top-notch hockey caps for ultimate style and comfort.</p>
+                        <div class="flex justify-between flex-col md:flex-col lg:flex-row">
+                            <p class="text-lg font-black text-btnColor">Price - $22.00</p>
+                            <p class="text-imgBg mt-2 md:mt-2 lg:mt-0"><i class="fa-solid fa-cart-shopping fa-shake mr-1"></i>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!--? Card 3 End -->      
+                
+                <!--! Card 4 -->
+                <div class="w-full flex items-center justify-between flex-col md:flex-col lg:flex-row card card-side bg-[#ffff] hover:shadow-xl hover:duration-150 hover:cursor-pointer border border-borderBgm  md:px-4 lg:px-4">
+                    <figure class="rounded-none w-full md:w-full lg:w-1/2 p-6 md:p-0 lg:p-0 md:px-3 md:pt-8" ><img src="./img/product_4.svg" alt="Movie" class="h-fit w-full"/></figure>
+                    <div class="card-body">
+                        <div class="flex items-start justify-start mb-2">
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-solid fa-star fa-fade mr-1 text-[#F99808]"></i> 5.0                      
+                            </p>
+                            
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-eye fa-fade mr-1"></i> 20
+                            </p>
+
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-heart fa-fade mr-1"></i> 200
+                            </p>
+                            
+                        </div>
+                        <h2 class="card-title text-xl font-black mb-2">Jersey For Hockeys</h2>
+                        <p class="text-para">Top-notch hockey jerseys for ultimate style and comfort.</p>
+                        <div class="flex justify-between flex-col md:flex-col lg:flex-row">
+                            <p class="text-lg font-black text-btnColor">Price - $22.00</p>
+                            <p class="text-imgBg mt-2 md:mt-2 lg:mt-0"><i class="fa-solid fa-cart-shopping fa-shake mr-1"></i>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!--? Card 4 End -->      
+                                
+                <!--! Card 5 -->
+                <div class="w-full flex items-center justify-between flex-col md:flex-col lg:flex-row card card-side bg-[#ffff] hover:shadow-xl hover:duration-150 hover:cursor-pointer border border-borderBgm  md:px-4 lg:px-4">
+                    <figure class="rounded-none w-full md:w-full lg:w-1/2 p-6 md:p-0 lg:p-0 md:px-3 md:pt-8" ><img src="./img/product_5.svg" alt="Movie" class="h-fit w-full"/></figure>
+                    <div class="card-body">
+                        <div class="flex items-start justify-start mb-2">
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-solid fa-star fa-fade mr-1 text-[#F99808]"></i> 5.0                      
+                            </p>
+                            
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-eye fa-fade mr-1"></i> 20
+                            </p>
+
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-heart fa-fade mr-1"></i> 200
+                            </p>
+                            
+                        </div>
+                        <h2 class="card-title text-xl font-black mb-2">World Cup Flags Football</h2>
+                        <p class="text-para">Explore World Cup Flags Football on our website today.</p>
+                        <div class="flex justify-between flex-col md:flex-col lg:flex-row">
+                            <p class="text-lg font-black text-btnColor">Price - $22.00</p>
+                            <p class="text-imgBg mt-2 md:mt-2 lg:mt-0"><i class="fa-solid fa-cart-shopping fa-shake mr-1"></i>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!--? Card 5 End -->
+                
+                                
+                <!--! Card 6 -->
+                <div class="w-full flex items-center justify-between flex-col md:flex-col lg:flex-row card card-side bg-[#ffff] hover:shadow-xl hover:duration-150 hover:cursor-pointer border border-borderBgm  md:px-4 lg:px-4">
+                    <figure class="rounded-none w-full md:w-full lg:w-1/2 p-6 md:p-0 lg:p-0 md:px-3 md:pt-8" ><img src="./img/product_6.svg" alt="Movie" class="h-fit w-full"/></figure>
+                    <div class="card-body">
+                        <div class="flex items-start justify-start mb-2">
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-solid fa-star fa-fade mr-1 text-[#F99808]"></i> 5.0                      
+                            </p>
+                            
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-eye fa-fade mr-1"></i> 20
+                            </p>
+
+                            <p class="text-imgBg font-medium" >
+                                <i class="fa-regular fa-heart fa-fade mr-1"></i> 200
+                            </p>
+                            
+                        </div>
+                        <h2 class="card-title text-xl font-black mb-2">World Cup Flags Football</h2>
+                        <p class="text-para">Explore World Cup Flags Football on our website today.</p>
+                        <div class="flex justify-between flex-col md:flex-col lg:flex-row">
+                            <p class="text-lg font-black text-btnColor">Price - $22.00</p>
+                            <p class="text-imgBg mt-2 md:mt-2 lg:mt-0"><i class="fa-solid fa-cart-shopping fa-shake mr-1"></i>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!--? Card 6 End -->
+                
+                
+
+            </div>
+        </section>
+        <!--? Product -->
+
+        <!--! Clients -->
+        <section class="my-10 px-4 md:px-15 lg:px-20">
+            <div class="pb-10 text-center border-b-2 border-borderBgm border-dashed">
+                <h1 class="text-2xl md:text-4xl lg:text-4xl font-black">Clients Question</h1>
+                <p class="text-sm md:text-base lg:text-base mt-4 text-para md:px-36 lg:px-80">Explore client's frequently asked questions to gain insights into our services, reliability, and commitment to excellence.</p>
+            </div>
+
+            <div class="border-b-2 border-borderBgm border-dashed pt-10 pb-20">
+                <div class="p-4 md:p-6 lg:p-6 rounded-2xl justify-center items-center border-borderBgm border grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                    <div class="col-span-1 w-full h-full ">
+                        <img src="./img/client.svg" alt="" class="w-full h-ful ml-4 md:ml-0 mt-3 md:mt-0 py-2 md:py-0">
+                    </div>
+
+                    <div class="col-span-2 ">
+                        <!-- Q 1 -->
+                        <div class="collapse collapse-plus bg-base-100 rounded-none border-b-2 border-b-borderBgm">
+                            <input type="radio" name="my-accordion-3" checked="checked" />
+                            <div class="collapse-title text-xl font-bold py-4">
+                                Our Equipment
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-sm md:text-base lg:text-base text-para">Discover the cutting-edge tools
+                                    and technology we utilize to ensure top-tier service and results</p>
+                            </div>
+                        </div>
+                        <!-- Q 1 End-->
+
+                        <!-- Q 2 -->
+                        <div class="collapse collapse-plus bg-base-100 rounded-none border-b-2 border-b-borderBgm">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-bold py-4">
+                                Hockey Training
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-sm md:text-base lg:text-base text-para">Discover our cutting-edge hockey
+                                    training programs designed to elevate your skills and performance on the ice.
+                                    Explore now!</p>
+                            </div>
+                        </div>
+                        <!-- Q 2 End-->
+
+                        <!-- Q 3 -->
+                        <div class="collapse collapse-plus bg-base-100 rounded-none border-b-2 border-b-borderBgm">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-bold py-4">
+                                Private Lessons
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-sm md:text-base lg:text-base text-para">Interested in personalized
+                                    instruction? Explore our Private Lessons for tailored learning experiences and
+                                    accelerated progress with expert guidance</p>
+                            </div>
+                        </div>
+                        <!-- Q 3 End-->
+
+                        <!-- Q 4 -->
+                        <div class="collapse collapse-plus bg-base-100 rounded-none border-b-2 border-b-borderBgm">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-bold py-4">
+                                Ski Touring
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-sm md:text-base lg:text-base text-para">Embark on epic Ski Touring
+                                    journeys with our expert guides, premier gear, and unforgettable mountain
+                                    experiences. Explore now!</p>
+                            </div>
+                        </div>
+                        <!-- Q 4 End-->
+
+                        <!-- Q 5 -->
+                        <div class="collapse collapse-plus bg-base-100 rounded-none border-b-2 border-b-borderBgm">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-bold py-4">
+                                Booking
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-sm md:text-base lg:text-base text-para">Effortless booking: Secure your
+                                    spot with our user-friendly platform. Choose dates, customize options, and confirm
+                                    instantly. Hassle-free reservations made simple.</p>
+                            </div>
+                        </div>
+                        <!-- Q 5 End-->
+
+                        <!-- Q 6 -->
+                        <div class="collapse collapse-plus bg-base-100 rounded-none border-b-2 border-b-borderBgm">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-bold py-4">
+                                Pricings
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-sm md:text-base lg:text-base text-para">Explore transparent Pricings:
+                                    Find affordable plans tailored to your needs, no hidden fees, and flexible payment
+                                    options available.</p>
+                            </div>
+                        </div>
+                        <!-- Q 6 End-->
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--? Clients -->
+
+        <!-- ! Touch -->
+        <section class="my-10 px-4 md:px-15 lg:px-20">
+            <div class="mb-10 pb-10 text-center border-b-2 border-borderBgm border-dashed">
+                <h1 class="text-2xl md:text-4xl lg:text-4xl font-black">Get In Touch</h1>
+                <p class="text-sm md:text-base lg:text-base mt-4 text-para md:px-36 lg:px-80">Have questions or suggestions? Reach out to us for prompt assistance. Your feedback matters to us greatly.</p>
+            </div>
+
+            <div class="py-4 px-0 md:py-4 md:px-0 lg:py-6 lg:px-0 rounded-2xl md:items-center md:justify-center  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Left  -->
+                <div class=" md:col-span-1 lg:col-span-1 border-borderBgm border p-4 rounded-xl">
+                    <!-- Card 1 -->
+                    <div class="bg-card_1_Bg p-8 rounded-2xl">
+                        <img src="./img/get-1.svg" alt="" class="mb-6">
+                        <p class="text-base text-para">Phone Number : </p>
+                        <p class="text-lg text-real font-black mt-2">(+62) 123-321-543</p>
+                    </div>
+                    <!-- Card 1 -->
+
+                    <!-- Card 2-->
+                    <div class="bg-card_2_Bg p-8 rounded-2xl my-7">
+                        <img src="./img/get-2.svg" alt="" class="mb-6">
+                        <p class="text-base text-para">Email : </p>
+                        <p class="text-lg text-real font-black mt-2">hockeys@support.com</p>
+                    </div>
+                    <!-- Card 2 -->
+
+                    <!-- Card 3-->
+                    <div class="bg-card_3_Bg p-8 rounded-2xl ">
+                        <img src="./img/get-3.svg" alt="" class="mb-6">
+                        <p class="text-base text-para">Location : </p>
+                        <p class="text-lg text-real font-black mt-2">152/1 Mohakhali Wireless Gate</p>
+                    </div>
+                    <!-- Card 3 -->
+                    
+                </div>
+                <!-- Left End -->
+
+                <!-- right  -->
+                <div class=" md:col-span-1 lg:col-span-2">
+                    <form class="items-start justify-start grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+                        <!-- Name -->
+                        <label class="form-control w-full max-w-full col-span-1 md:col-span-2 lg:col-span-1">
+                            <div class="label mb-1">
+                                <span class="label-text text-real text-xl font-bold">Your Name</span>
+                            </div>
+                            <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-full text-base bg-input_Bg border-none outline-none focus:outline-real focus:text-real p-5" />
+                        </label>
+                        <!-- mail -->
+                        <label class="form-control w-full max-w-full col-span-1 md:col-span-2 lg:col-span-1">
+                            <div class="label mb-1">
+                                <span class="label-text text-real text-xl font-bold"> Your email</span>
+                            </div>
+                            <input type="mail" placeholder="Enter your email" class="input input-bordered w-full max-w-full text-base bg-input_Bg border-none outline-none focus:outline-real focus:text-real p-5" />
+                        </label>                        
+                        <!-- Subject -->
+                        <label class="form-control w-full max-w-full col-span-1 md:col-span-2 lg:col-span-1">
+                            <div class="label mb-1">
+                                <span class="label-text text-real text-xl font-bold">Subject</span>
+                            </div>
+                            <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-full text-base bg-input_Bg border-none outline-none focus:outline-real focus:text-real p-5" />
+                        </label>
+                        <!-- phone -->
+                        <label class="form-control w-full max-w-full col-span-1 md:col-span-2 lg:col-span-1">
+                            <div class="label mb-1">
+                                <span class="label-text text-real text-xl font-bold">Phone Number</span>
+                            </div>
+                            <input type="mail" placeholder="Enter your phone number" class="input input-bordered w-full max-w-full text-base bg-input_Bg border-none outline-none focus:outline-real focus:text-real p-5" />
+                        </label>                                                
+                        <!-- text-->
+                        <label class="form-control w-full lg:h-96 max-w-full col-span-full">
+                            <div class="label mb-1">
+                                <span class="label-text text-real text-xl font-bold">Message</span>
+                            </div>
+                            <textarea placeholder="Write your message" class="text-base  textarea textarea-bordered textarea-lg h-full w-full max-w-full bg-input_Bg border-none outline-none focus:outline-real focus:text-real p-5" ></textarea>
+                        </label>                                     
+                        <!-- Submit -->
+                        <button type="submit" class="sm:mt-2 btn w-full max-w-full col-span-full transition delay-150 duration-300 ease-in-out bg-btnColor border-btnColor border-2 text-xl text-[#ffff] font-bold  hover:bg-transparent hover:text-btnColor hover:border-btnColor  hover:shadow-btnColor hover:shadow-md hover:cursor-pointer  hover:-translate-y-2 hover:scale-8">Send Message</button>           
+                    </form>
+                </div>
+                <!-- right End -->
+
+                <!-- Bottom -->
+                <div class=" md:col-span-3 lg:col-span-3 bg-input_Bg text-center rounded-xl p-9">
+                    <h1 class="text-2xl font-black mb-6 text-real">Social Media</h1>
+                    <div>
+                        <a href="#" class="px-2"> <i class="text-2xl hover:text-btnColor transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-150 fa-brands fa-twitter"></i></a>
+                        <a href="#" class="px-2"> <i class="text-2xl hover:text-btnColor transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-150 fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="px-2"> <i class="text-2xl hover:text-btnColor transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-150 fa-brands fa-instagram"></i></a>
+                        <a href="#" class="px-2"> <i class="text-2xl hover:text-btnColor transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-150 fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Bottom End -->
+
+            </div>
+        </section>
+        <!-- ? Touch End -->
+
+
+    </main>
+    <!--? Main End -->
+
+    <!--! Footer -->
+    <footer class="footer px-5 md:px-14 lg:px-20 py-10 bg-real grid grid-cols-2 md:grid-cols-1 lg:grid-cols-5 ">
+        <div class="col-span-2 md:col-span-2 lg:col-span-2 flex flex-col justify-center items-center md:items-start lg:items-start">
+            <h1 class="text-2xl font-black text-[#ffff]">Get in Touch</h1>
+            <p class="text-base text-footClr md:pr-24 lg:pr-42 text-center md:text-left lg:text-left">Have questions or feedback? Reach out to us for assistance and information. We welcome your inquiries.</p>
+            <p class="text-footClr text-base mt-1"><i class="text-btnColor mr-1 fa-regular fa-envelope"></i> hockeys@support.com</p>
+            <p class="text-footClr text-base mt-1"><i class="text-btnColor mr-1 fa-solid fa-phone"></i>(+62) 123-321-543</p>
+        </div>
+        <div class="sm:col-span-1 md:col-span-2 lg:col-span-1 flex flex-col justify-center items-center md:items-start lg:items-start">
+            <header class="text-[#ffff] text-lg font-bold">Company</header>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">About us</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Leadership</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Careers</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">News & Article</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Legal Notice</a>
+        </div>
+
+        <div class="sm:col-span-1 md:col-span-2 lg:col-span-1 flex flex-col justify-center items-center md:items-start lg:items-start">
+            <header class="text-[#ffff] text-lg font-bold">Support</header>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Help Center</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">FAQ</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Ticket Support</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Contact Us</a>
+        </div>
+        <div class="w-full col-span-2 md:col-span-2 lg:col-span-1 flex flex-col justify-center items-center md:items-start lg:items-start ">
+            <header class="text-[#ffff] text-lg font-bold">Services</header>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Academy</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Group Lesson</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Private Lesson</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Hockeys for kids</a>
+            <a class="text-base text-footClr hover:text-btnColor hover:underline-offset-2 hover:underline hover:duration-150 cursor-pointer">Hockeys for Adult</a>
+        </div>
+    </footer>
+    <!--? Footer End -->
+
+
+</body>
+
+</html>
